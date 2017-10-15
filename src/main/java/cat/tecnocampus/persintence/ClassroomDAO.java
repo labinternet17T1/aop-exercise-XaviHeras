@@ -9,7 +9,6 @@ import org.springframework.stereotype.Repository;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.Timestamp;
 import java.util.List;
 
 @Repository
@@ -29,7 +28,6 @@ public class ClassroomDAO {
                 .plugs(resultSet.getBoolean("plugs"))
                 .build();
     };
-
 
     public ClassroomDAO(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
